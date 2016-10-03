@@ -4,6 +4,7 @@ $provisionedActivities = array("Specs","Drugs","Rock and Roll");
 
 $provisionedActivities[1] = "Hugs"; 
 
+unset($provisionedActivities[3]);
 ?>
 
 
