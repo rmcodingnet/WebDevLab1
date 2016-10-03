@@ -16,7 +16,7 @@ $provisionedActivities = array("Specs","Drugs","Rock and Roll");
     <![endif]-->
 </head>
 <body>
-<?php foreach($provisionedActivity as $x) {
+<?php foreach($provisionedActivities as $x) {
         print "<p>$x</p>";
     }?>
 </body>
