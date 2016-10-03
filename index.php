@@ -10,7 +10,9 @@ if($myage > 16) {
 } else if($myage > 21) {
     $message = "Specs, Mugs and Sausage Rolls";
 }
+
 ?>
+
 
 <html lang="en">
 <head>
