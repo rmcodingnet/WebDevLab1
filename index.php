@@ -3,9 +3,9 @@ $myname = "Rory";
 $myage = 20;
 $message = "default text";
 
-if($myage > 16) {
+if($myage > 16 && $myage < 18) {
     $message = "Specs";
-} else if($myage > 18) {
+} else if($myage > 18 && $myage < 21) {
     $message = "Specs and Mugs";
 } else if($myage > 21) {
     $message = "Specs, Mugs and Sausage Rolls";
