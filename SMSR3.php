@@ -6,7 +6,7 @@ $provisionedActivities = array("Specs","Drugs","Rock and Roll");
 
 ?>
 
-;
+
 <html lang="en">
 <head>
     <meta charset="utf-8">
