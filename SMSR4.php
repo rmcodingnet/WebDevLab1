@@ -19,8 +19,6 @@ for ($i = 0; $i < 30; $i++)
 {
     $productsAvailable = $productsAvailable + strval($i);
     $specs = ($i % 2);
-    echo $specs;
-
     $mugs = ($i % 3);
     $sausageroll = ($i % 4);
     $productsAvailable = $productsAvailable + " of the month";
@@ -41,7 +39,7 @@ for ($i = 0; $i < 30; $i++)
     } else {
         $productsAvailable = $productsAvailable + "No products are available";
     }
-
+    echo $productsAvailable;
 }
 
 //foreach($provisionedActivities as $x)
