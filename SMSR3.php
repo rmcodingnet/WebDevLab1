@@ -1,5 +1,5 @@
 <?php
-$provisionedActivities = array("Specs","Drugs","Rock and Roll")
+$provisionedActivities = array("Specs","Drugs","Rock and Roll");
 
 
 
