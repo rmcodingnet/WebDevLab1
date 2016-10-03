@@ -21,25 +21,25 @@ for ($i = 0; $i < 30; $i++)
     $specs = ($i % 2);
     $mugs = ($i % 3);
     $sausageroll = ($i % 4);
-    $productsAvailable = strval($productsAvailable) + " of the month";
+    $productsAvailable = $productsAvailable . " of the month";
     if($specs == 0 && $mugs == 0 && $sausageroll == 0) {
-        $productsAvailable = strval($productsAvailable) + "Specs, Mugs and Sausage rolls are available";
+        $productsAvailable = $productsAvailable . "Specs, Mugs and Sausage rolls are available";
     } elseif($specs == 0) {
-        $productsAvailable = strval($productsAvailable) + "Specs are available";
+        $productsAvailable = $productsAvailable . "Specs are available";
     } elseif($mugs == 0) {
-        $productsAvailable = strval($productsAvailable) + "Mugs are available";
+        $productsAvailable = $productsAvailable . "Mugs are available";
     } elseif($sausageroll == 0) {
-        $productsAvailable = strval($productsAvailable) + "Sausage rolls are available";
+        $productsAvailable = $productsAvailable . "Sausage rolls are available";
     } elseif($specs == 0 && $mugs == 0 && $sausageroll != 0) {
-        $productsAvailable = strval($productsAvailable) + "Specs and Mugs are available";
+        $productsAvailable = $productsAvailable . "Specs and Mugs are available";
     } elseif($specs != 0 && $mugs == 0 && $sausageroll == 0){
-        $productsAvailable = strval($productsAvailable) + "Mugs and Sausagerolls are available";
+        $productsAvailable = $productsAvailable . "Mugs and Sausagerolls are available";
     } elseif ($specs == 0 && $mugs != 0 && $sausageroll == 0) {
-        $productsAvailable = strval($productsAvailable) + "Specs and Sausagerolls are available";
+        $productsAvailable = $productsAvailable . "Specs and Sausagerolls are available";
     } else {
-        $productsAvailable = strval($productsAvailable) + "No products are available";
+        $productsAvailable = $productsAvailable . "No products are available";
     }
-    echo strval($productsAvailable);
+    echo $productsAvailable;
 }
 
 //foreach($provisionedActivities as $x)
