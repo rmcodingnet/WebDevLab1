@@ -21,8 +21,8 @@ if($myage > 16) {
     <![endif]-->
 </head>
 <body>
-<p>Your name is: <?php $myname?> <br>
-   Your age is: <?php $myage?> <br>
-   Therefore you can purchase:</p>
+<p>Your name is: <?php echo $myname?> <br>
+   Your age is: <?php echo $myage?> <br>
+   Therefore you can purchase:<?php echo $message?></p>
 </body>
 </html>
