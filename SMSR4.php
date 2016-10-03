@@ -19,6 +19,7 @@ for ($i = 0; $i < 30; $i++)
 {
     $productsAvailable = $productsAvailable + strval($i);
     $specs = ($i % 2);
+    echo $specs;
 
     $mugs = ($i % 3);
     $sausageroll = ($i % 4);
