@@ -1,9 +1,11 @@
 <?php
+$gitisapainintheass = true;
 $username = $_POST['username'];
 $password = $_POST['password'];
 
 if($username = "twat" && $password = "password1") {
     setcookie('access_level', 'standarduser');
+    header("homepage.php");
 } else {
     header("login.php");
 }

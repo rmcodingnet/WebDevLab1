@@ -18,7 +18,7 @@
 </head>
 
 <body>
-<form action="checkIn.php" method="post">
+<form action="passwordCheck.php" method="post">
     Username:<br>
     <input type="text" name="username" placeholder="Enter Username">
     <br>
