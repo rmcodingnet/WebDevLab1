@@ -1,14 +1,18 @@
 <?php
+$db = new mysqli(
+    "eu-cdbr-azure-north-e.cloudapp.net",
+    "b69cae8485cbb8",
+    "b871ddfb",
+    "1507079db" );
+// test our connection
+if ($db->connect_errno) {
+    die ('Connection Failed :'.$db->connect_error );
+}
 $dom = new DOMDocument("1.0");
 $node = $dom->createElement("markers");
 $parnode = $dom->appendChild($node);
-include("dbconnect.php");
-// Start XML file, create parent node
-
-
 
 // Select all the rows in the markers table
-
 $query = "SELECT * FROM markers WHERE 1";
 $result = $db->query($query);
 if (!$result) {
