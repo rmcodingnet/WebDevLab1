@@ -1,4 +1,5 @@
 <?php
+echo "here2";
 $dom = new DOMDocument("1.0");
 $node = $dom->createElement("markers");
 $parnode = $dom->appendChild($node);
