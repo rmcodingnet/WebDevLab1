@@ -1,4 +1,7 @@
 <?php
+$dom = new DOMDocument("1.0");
+$node = $dom->createElement("markers");
+$parnode = $dom->appendChild($node);
 $db = new mysqli(
     "eu-cdbr-azure-north-e.cloudapp.net",
     "b69cae8485cbb8",
@@ -7,9 +10,7 @@ $db = new mysqli(
 if ($db->connect_errno) {
     die ('Connection Failed :'.$db->connect_error );
 }
-$dom = new DOMDocument("1.0");
-$node = $dom->createElement("markers");
-$parnode = $dom->appendChild($node);
+
 
 // Select all the rows in the markers table
 $query = "SELECT * FROM markers WHERE 1";
