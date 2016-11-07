@@ -10,4 +10,6 @@ $db = new mysqli(
 if ($db->connect_errno) {
     die ('Connection Failed :'.$db->connect_error );
 }
+
 ?>
+
