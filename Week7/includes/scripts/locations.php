@@ -32,3 +32,4 @@ while ($row = $result->fetch_array()){
 
 $result->close();
 $db->close();
+?>
