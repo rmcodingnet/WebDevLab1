@@ -9,4 +9,6 @@ $db = new mysqli(
 // test our connection
 if ($db->connect_errno) {
     die ('Connection Failed :'.$db->connect_error );
+} else {
+    echo "<p>The database is fine</p>";
 }
