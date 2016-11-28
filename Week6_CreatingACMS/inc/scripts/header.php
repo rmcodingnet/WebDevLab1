@@ -7,7 +7,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>The Blog of Charles Babbage</title>
-    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="stylesheet" type="text/css" href="../../../Week6_CreatingACMS/style/style.css">
 </head>
 <body>
 <header>
