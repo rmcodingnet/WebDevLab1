@@ -5,11 +5,13 @@ var locations = [
     ['Title C', 3.147372,101.597443, 3],
     ['Title D', 3.19125,101.710052, 4]
 ];
-var map = new google.maps.Map(document.getElementById('map'), {
-     zoom: 12,
-     center: new google.maps.LatLng(3.171368,101.653404),
-     mapTypeId: google.maps.MapTypeId.ROADMAP
-});
+function initMap() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 12,
+        center: new google.maps.LatLng(3.171368, 101.653404),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+}
 
 var infowindow = new google.maps.InfoWindow;
 
@@ -28,6 +30,10 @@ for (i = 0; i < locations.length; i++) {
         }
     })(marker, i));
 }
+</script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAKY4gvLztVr7zaf8q4g9R1YST5HKc0W8&callback=initMap">
 </script>
 
 <div data-role="page" id="map_result">
